@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Edo-SZ';
+    src: url('https://cdn.webfont.youziku.com/webfonts/nomal/122977/47808/5b9665f1f629d80f540cc4be.gif');
+    src: url('https://cdn.webfont.youziku.com/webfonts/nomal/122977/47808/5b9665f1f629d80f540cc4be.gif') 
+    format('embedded-opentype'),
+    url('https://cdn.webfont.youziku.com/webfonts/nomal/122977/47808/5b9665f1f629d80f540cc4be.png') 
+    format('woff2'),
+    url('https://cdn.webfont.youziku.com/webfonts/nomal/122977/47808/5b9665f1f629d80f540cc4be.bmp') 
+    format('woff'),
+    url('https://cdn.webfont.youziku.com/webfonts/nomal/122977/47808/5b9665f1f629d80f540cc4be.jpg') 
+    format('truetype');font-weight: normal;font-style: normal;}   
