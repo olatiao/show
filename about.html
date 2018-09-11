@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/papercss@1.5.1/dist/paper.min.css">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <title>About</title>
 </head>
 <style>
@@ -48,12 +50,16 @@
         </div>
         <img src="https://wht.im/assets/img/works/contact/thumb-2.jpg?v=v6ro80" alt="">
         <!-- 在需要展示评论框处插入 -->
-        <div class="cm-article" data-key="文章唯一id"></div>
+        <div id="vcomments"></div>
     </div>
-
-    <!-- </body> 标签结束前插入 -->
-    <link rel="stylesheet" href="//comment.moe/dest/static/css/plus.css">
-    <script src="//comment.moe/dest/static/js/build.js" charset="UTF-8"></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '2hKATcBM3mMq4wnHxhCxB1hb-gzGzoHsz',
+            appKey: 't6N66eViKPe2ReGETiHzrUEK',
+            avatar: 'mp'
+        })
+    </script>
 </body>
 
 </html>
