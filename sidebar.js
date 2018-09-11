@@ -44,11 +44,7 @@
                 var http = new XMLHttpRequest();
                 console.log();
                 http.open(
-                    "GET",
-                    window.location.origin +
-                    window.location.pathname +
-                    template.target +
-                    ".md",
+                    "GET", window.location.origin + "/md" + template.target + ".md",
                     true
                 );
                 http.send(null);
