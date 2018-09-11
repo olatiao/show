@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/papercss@1.5.1/dist/paper.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./index.css"> -->
+    <link rel="stylesheet" type="text/css" href="./libs/editormd.min.css">
+    <script src="libs/jquery-2.2.1.js"></script>
+    <script src="libs/marked.min.js"></script>
+    <script src="libs/prettify.min.js"></script>
+    <script src="libs/raphael.min.js"></script>
+    <script src="libs/underscore.min.js"></script>
+    <script src="libs/sequence-diagram.min.js"></script>
+    <script src="libs/flowchart.min.js"></script>
+    <script src="libs/jquery.flowchart.min.js"></script>
+    <script src="libs/editormd.min.js"></script>s
     <title>About</title>
 </head>
 <style>
 </style>
+<!-- <script>
+    var ifame = document.getElementById('ifameID'); //获取iframe元素
+    ifame = function(){
+    document.getElementById('ifameID').style.height = window.innerHeight + 'px';
+    window.open('http://zhidao.baidu.com','zhidao');
+};
+</script> -->
 
 <body>
     <nav class="border fixed split-nav">
@@ -38,9 +56,15 @@
             </div>
         </div>
     </nav>
-    <div class="paper container" style="margin-top: 100px;">
-
-    </div>
+    <sidebar class="pull-left" id="sidebar_js"></sidebar>
+    <article>
+        <div class="markdown-body editormd-preview-container" style="width: 800px;" id="article-container-js">
+        </div>
+    </article>
+    <div class="hidden" id="editormd-js"></div>
+    <script type="text/javascript" src="./router.js"></script>
+    <script type="text/javascript" src="./sidebar.js"></script>
+    <!-- <iframe name="zhidao" src="https://olatiao.github.io/" frameborder="1" width="100%" height="1000px"></iframe> -->
 </body>
 
 </html>
