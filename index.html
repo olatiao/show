@@ -9,20 +9,51 @@
     <title>Document</title>
 </head>
 <style>
-    .container{
+    .container {
         margin-top: 100px
     }
 </style>
+
+<style>
+    .saying:after {
+        content: "|";
+        font-size: 1.2em;
+        line-height: 0;
+        /* display: inline-block; */
+        vertical-align: baseline;
+        opacity: 1;
+        animation: caret 500ms infinite;
+    }
+</style>
+<script language="javascript">
+    var index = 0;
+    var word;
+
+    function type() {
+        var typePanel = document.getElementById("aa");
+        typePanel.innerText = word.substring(0, index++);
+        if (index % 3 == 0) {
+            typePanel.className = "";
+        } else if (index % 3 == 1) {
+            typePanel.className = "saying";
+        }
+    }
+    window.onload = function () {
+        word = document.getElementById("w").innerHTML;
+        setInterval(type, 200);
+    }
+</script>
+
 <body>
     <div class="paper container">
-            <div class="card-body">
-                <h1 class="card-title">Find Something I Liked</h1>
-                <h4 class="card-text">There are have movie, animation, TV series and other resources online viewing,
-                    css,
-                    js, php, server
-                    and
-                    other related resources links.</h4>
-                <button><a href="/about.html">Check This</a></button>
+        <div class="card-body">
+            <h1 class="card-title" style="display:none" id="w">Find Something I Liked</h1>
+            <h1 id="aa" class="saying"></h1>
+            <h4 class="card-text">
+                There are have movie, animation, TV series and other resources online viewing,
+                css,js, php, server and other related resources links.
+            </h4>
+            <button><a href="/about.html">Check This</a></button>
         </div>
     </div>
 </body>
