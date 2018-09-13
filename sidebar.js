@@ -98,7 +98,7 @@
                 }
             }
             if (isCurrent && arg.href) {
-                window.document.title = arg.title + "-eoLinker官方支持手册";
+                window.document.title = arg.title;
             }
             var template = {
                 html: '<li class="common-level-' +

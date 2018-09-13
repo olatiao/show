@@ -3,7 +3,7 @@
 	window.eocourse.sidebarConstant = {
 		id: 'sidebar_js',
 		list: [{
-			title: '欢迎使用',
+			title: '前言',
 			href: '/md/index',
 			icon: 'index'
 		}, {
