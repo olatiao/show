@@ -4,7 +4,7 @@
 		id: 'sidebar_js',
 		list: [{
 			title: '欢迎使用',
-			href: '/md/index',
+			href: '/md/new',
 			icon: 'index'
 		}, {
 			icon: 'index',
