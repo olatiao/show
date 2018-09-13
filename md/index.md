@@ -1,7 +1,6 @@
 ## 这只是一个文档仓库
 
-![](http://img2.ph.126.net/x8JzO6VxFTc9cDM9ylsotQ==/6630743409770797130.jpg)
-
+![](https://i.loli.net/2018/09/13/5b9a0592871a5.gif)
 
 何为逍遥？
 
